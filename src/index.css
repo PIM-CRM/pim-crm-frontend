@@ -1,0 +1,239 @@
+@font-face {
+      font-family: 'SFPro';
+      src: url('/fonts/SFProDisplay-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'SFPro', Arial, Helvetica, sans-serif;
+      font-weight: 400;
+}
+
+.ant-layout {
+      background-color: #fff !important;
+}
+
+.gradient-bg {
+      background-image: url('/images/gradient.png');
+      background-repeat: no-repeat;
+      background-position: right;
+}
+
+/*============== @ custom Scrollbar css here  ==================*/
+.custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+      background: #f4f4f4;
+      width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #d6d6d6;
+      border-radius: 4px;
+      width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #c0c0c0;
+      width: 4px;
+}
+/*============== @calender custom css here  ==================*/
+.rbc-calendar {
+      color: #929292 !important;
+      border: none !important;
+}
+.rbc-month-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white !important;
+}
+.rbc-month-view {
+      border: none !important;
+}
+
+.rbc-header {
+      padding: 20px !important;
+      text-align: center;
+      border: transparent !important;
+}
+.rbc-day-bg {
+      background-color: #fff !important;
+      border-radius: 8px !important;
+      border: 1px solid #ddddddd2 !important;
+      margin: 4px !important;
+}
+.rbc-date-cell {
+      text-align: start !important;
+      padding: 10px !important;
+      color: #000000 !important;
+      font-weight: 600 !important;
+}
+.rbc-month-row {
+      border: none !important;
+}
+.rbc-row-bg {
+      color: #000000 !important;
+      background-color: #fff !important;
+      border: 'none' !important;
+}
+.rbc-event {
+      /* padding: 0px !important; */
+      background-color: transparent !important;
+      position: absolute;
+      bottom: -40%;
+      max-width: 200px !important;
+}
+.rbc-day-bg:nth-child(1) {
+      background-color: #e2e2e298 !important;
+      border: 1px solid #ddddddd2 !important;
+}
+
+.rbc-day-bg:nth-child(7) {
+      background-color: #e2e2e298 !important;
+      border: 1px solid #ddddddd2 !important;
+}
+.text-black-color {
+      color: black !important;
+}
+/* steps */
+.bg-gradient {
+      background-image: url('/images/ai-gradient.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+}
+.bg-folder {
+      background-image: url('/images/folder.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100%;
+      background-position: top;
+}
+.ant-otp {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+}
+.ant-otp-input {
+      height: 50px !important;
+      width: 50px !important;
+      border-radius: 12px !important;
+}
+.hide-scrollbar {
+      overflow-y: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+}
+/* 
+
+chatv=box
+*/
+
+.messages {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+}
+
+.message {
+      border-radius: 20px;
+      padding: 8px 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+}
+
+.yours .message {
+      background-color: #eee;
+      position: relative;
+}
+
+.yours .message.last:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: -7px;
+      height: 20px;
+      width: 20px;
+      background: #eee;
+      border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: -10px;
+      width: 10px;
+      height: 20px;
+      background: white;
+      border-bottom-right-radius: 10px;
+}
+
+.mine {
+      align-items: flex-end;
+}
+
+.mine .message {
+      color: white;
+      width: 100%;
+      background: linear-gradient(to bottom, #007aff 0%, #0085d1 100%);
+      background-attachment: fixed;
+      position: relative;
+}
+
+.mine .message.last:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      right: -8px;
+      height: 20px;
+      width: 20px;
+      background: linear-gradient(to bottom, #007aff 0%, #0085d1 100%);
+      background-attachment: fixed;
+      border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: -10px;
+      width: 10px;
+      height: 20px;
+      background: white;
+      border-bottom-left-radius: 10px;
+}
+.ant-radio-button-wrapper::before {
+      background-color: #f1f1f1 !important;
+      border: none !important;
+}
+.ant-tooltip-inner {
+      background-color: #f8f8fa !important;
+      color: #333 !important;
+}
+.ant-tooltip-arrow::before {
+      background-color: #f8f8fa !important;
+}
+.jodit-status-bar__item {
+      display: none !important;
+}
